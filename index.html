@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body {
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            color: cornflowerblue;
+			background-color: #edeef3;
+			text-align: center;
+            padding-top: 70px;
+        }
+        button {
+            color: white;
+            background-color: cornflowerblue;
+            width: 170px;
+            border: none;
+            border-color: white;
+            padding: 14px 25px;
+            margin: 4px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 17px;
+            border-radius: 18px;
+        }
+        button:hover {
+            background-color: white;
+            color:cornflowerblue;
+            transition-duration: 0.4s;
+        }
+        h1{
+            font-size: 55px;
+        }
+        h2{
+            font-size: 25px;
+            color: cornflowerblue;
+        }
+        p{
+            font-size: 40px;
+            color: rgb(34, 88, 188);
+            block-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+<h1> Japanese Flashcards </h1>
+<h2> To start, press the "generate word" button </h2>
+<p id="text"></p>
+    <button onclick="display_vocab()"> Generate Word </button>
+    <button onclick="submit()"> Enter Answer </button>
+    <button onclick="hint()"> Definition </button>
+
+</body>
+
+<script src="japanese.js"></script>
+
+</html>
